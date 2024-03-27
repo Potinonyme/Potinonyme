@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=   , initial-scale=1.0">
+  <title>Potinonyme</title>
+</head>
+<link rel="stylesheet" href="les_potins.css">
+
+<body>
+
+  <!-- navbar ordi -->
+  <div class="navbar">
+    <ul>
+      <a href="index.html"><button>Accueil</button></a>
+      <a href="les_potins.html"><button>Les potins</button></a>
+      <a href="envoie_potin.html"><button>Envoyer un potin</button></a>
+      <a href="qui_sommes_nous.html"><button>Qui sommes nous</button></a>
+      <a href="info.html"><button>Info</button></a>
+    </ul>
+  </div>
+
+  <!-- navbar tablette et tel -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <div class="sidebar">
+    <div class="logo_content">
+      <i class="bx bx-menu" id="bnt"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <a href="index.html">
+          <span class="links_name">Accueil</span>
+        </a>
+      </li>
+      <li>
+        <a href="les_potins.html">
+          <span class="links_name">Les potins</span>
+        </a>
+      </li>
+      <li>
+        <a href="envoie_potin.html">
+          <span class="links_name">Envoyer un potin</span>
+        </a>
+      </li>
+      <li>
+        <a href="qui_sommes_nous.html">
+          <span class="links_name">Qui sommes nous</span>
+        </a>
+      </li>
+      <li>
+        <a href="info.html">
+          <span class="links_name">Info</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- Pour faire fonctionner le bouton  -->
+  <script>
+    let bnt = document.querySelector("#bnt");
+    let sidebar = document.querySelector(".sidebar");
+
+    bnt.onclick = function () {
+      sidebar.classList.toggle("active");
+    };
+  </script>
+<div class="centre">
+  <div class="list">
+    <ul class="ul">
+      <li class="li">Clara Poupée a pécho Yoni Cholley l'année derniere</li>
+      <li class="li">Clara Gehin en couple avec Victor Mich</li>
+      <li class="li">Elena Francois en 2°3 a galoche le correspondant mexicain de Martin en boite  </li>
+      <li class="li">Charlene Pérève a faillit faire des bails dans les toilettes du lycére l'année derniere </li>
+      <li class="li">Mr Wirth ( prof de maths) est obliger d'aller voir une spy pour supporter la pression du lycée </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+
+</html>

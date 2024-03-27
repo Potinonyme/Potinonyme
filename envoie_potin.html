@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=   , initial-scale=1.0">
+  <title>Potinonyme</title>
+</head>
+<link rel="stylesheet" href="envoie_potin.css">
+
+<body>
+
+  <!-- navbar ordi -->
+  <div class="navbar">
+    <ul>
+      <a href="index.html"><button>Accueil</button></a>
+      <a href="les_potins.html"><button>Les potins</button></a>
+      <a href="envoie_potin.html"><button>Envoyer un potin</button></a>
+      <a href="qui_sommes_nous.html"><button>Qui sommes nous</button></a>
+      <a href="info.html"><button>Info</button></a>
+    </ul>
+  </div>
+
+  <!-- navbar tablette et tel -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <div class="sidebar">
+    <div class="logo_content">
+      <i class="bx bx-menu" id="bnt"></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <a href="index.html">
+          <span class="links_name">Accueil</span>
+        </a>
+      </li>
+      <li>
+        <a href="les_potins.html">
+          <span class="links_name">Les potins</span>
+        </a>
+      </li>
+      <li>
+        <a href="envoie_potin.html">
+          <span class="links_name">Envoyer un potin</span>
+        </a>
+      </li>
+      <li>
+        <a href="qui_sommes_nous.html">
+          <span class="links_name">Qui sommes nous</span>
+        </a>
+      </li>
+      <li>
+        <a href="info.html">
+          <span class="links_name">Info</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- Pour faire fonctionner le bouton  -->
+  <script>
+    let bnt = document.querySelector("#bnt");
+    let sidebar = document.querySelector(".sidebar");
+
+    bnt.onclick = function () {
+      sidebar.classList.toggle("active");
+    };
+  </script>
+
+  <div class="container">
+    <p>
+      Pour envoyer un potin, il vous suffit de cliquer sur le bouton « Envoyer un Potin ».
+      Tous les potins sont soumis à une vérification minutieuse effectuée par notre intelligence
+      artificielle et sont généralement publiés dans un délai d’environ 48 heures, sauf exceptions
+      (veuillez consulter notre page d’informations pour plus de détails).</p>
+
+      <a href="mailto:potinonyme@gmail.com" class="button">Envoyer un Potin</a>
+  </div>
+
+</body>
+
+</html>

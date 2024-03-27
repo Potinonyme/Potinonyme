@@ -1,0 +1,186 @@
+/* Liens */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Indie+Flower&display=swap');
+
+/* De base */
+* {
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Fond */
+body {
+    background-color: #8EA2C6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Navbar ordi*/
+.navbar {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    /* Couleur du texte ajustée */
+    text-align: center;
+}
+
+.navbar ul {
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 7px;
+    list-style: none;
+}
+
+.navbar ul a,
+.navbar ul button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #8EA2C6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Ajustement de la taille des boutons pour les petits écrans */
+@media screen and (max-width: 480px) {
+
+    .navbar ul a,
+    .navbar ul button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* cache la navbar quand trop petit */
+@media screen and (max-width: 786px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* navbar tablette et téléphone */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6px 14px;
+    height: 100%;
+    z-index: 10;
+    width: 78px;
+    background: #607D8B;
+    transition: all 0.5s ease;
+    overflow-y: auto;
+    /* Ajout de défilement vertical */
+}
+
+.sidebar.active {
+    width: 170px;
+    transition: all 0.5s ease;
+}
+
+.sidebar #bnt {
+    position: absolute;
+    left: 15%;
+    color: #fff;
+    top: 6px;
+    font-size: 25px;
+    height: 50px;
+    text-align: center;
+    width: 50px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.sidebar.active #bnt {
+    left: 70%;
+}
+
+.sidebar ul {
+    margin-top: 75px;
+    position: relative;
+    right: 30px;
+    line-height: 40px;
+}
+
+.sidebar ul li {
+    list-style: none;
+    height: 50px;
+    width: 120px;
+    position: relative;
+    line-height: 50px;
+}
+
+.sidebar.active .links_name {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar .links_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+
+ .centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 786px) {
+    .centre {
+        margin-left: 65px;
+        margin-top: 20px;
+    }
+}
+
+.list {
+    max-width: 600px;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+} 
